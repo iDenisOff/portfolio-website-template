@@ -1,0 +1,8 @@
+.container {
+    display: grid;
+    grid-template-columns: 2fr repeat(6, 1fr) 2fr;
+
+    padding: 100px 0 80px;
+
+    background-color: var(--color-blue);
+}

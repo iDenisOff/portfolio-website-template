@@ -1,0 +1,38 @@
+.container {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr 4fr;
+
+    align-content: center;
+
+    user-select: none;
+
+    padding: 70px 0;
+
+    background-color: var(--color-grey-light);
+}
+
+.header {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    margin-top: auto;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+
+    padding: 30px 35% 0 35%;
+
+    color: var(--color-grey);
+}
+
+.video-container {
+    width: 100%;
+    align-content: center;
+    padding-top: 40px;
+}

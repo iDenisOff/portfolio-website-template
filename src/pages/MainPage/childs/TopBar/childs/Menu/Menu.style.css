@@ -1,0 +1,31 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
+.menu-item {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 26px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu-item-text {
+    cursor: pointer;
+}
+
+.menu-item-text:hover {
+    font-size: 18px;
+}
+
+.menu-item-text-active {
+    color: var(--color-blue);
+    font-weight: bold;
+}
+
+.menu-item-text-active:hover {
+    font-size: 16px;
+}

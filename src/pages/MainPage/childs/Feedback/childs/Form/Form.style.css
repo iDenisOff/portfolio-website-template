@@ -1,0 +1,85 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 3fr 2fr;
+
+    padding-top: 10px;
+}
+
+.container-input {
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+
+    padding-bottom: 20px;
+}
+
+.input {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+
+    padding: 15px 0 15px 20px;
+
+    border: none;
+    outline: none;
+}
+
+.container-textarea {
+    display: grid;
+}
+
+.textarea {
+    border: none;
+    outline: none;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+
+    resize: none;
+    padding: 17px 20px;
+}
+
+.textarea::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 24px;
+}
+
+.textarea::-webkit-scrollbar-thumb {
+    background-color: var(--color-grey);
+    border-radius: 25px;
+}
+
+.container-button {
+    margin: auto;
+}
+
+.button {
+    padding: 13px 21px 10px 21px;
+
+    background-color: var(--color-blue);
+    outline: none;
+
+    font-weight: lighter;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    border: none;
+
+    color: #ffffff;
+    user-select: none;
+}
+
+.button:hover {
+    background-color: var(--color-blue-dark);
+
+    cursor: pointer;
+}
+
+.button:active {
+    background-color: var(--color-blue-dark);
+}

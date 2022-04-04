@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    min-width: 1050px;
+    min-height: 200px;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--color-grey-light);
+}

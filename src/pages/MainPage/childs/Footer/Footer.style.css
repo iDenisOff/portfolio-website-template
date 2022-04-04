@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    background-color: var(--color-blue);
+
+    text-align: center;
+
+    padding: 50px 0;
+}
+
+.container-text {
+    margin: auto;
+    text-align: left;
+}
+
+.text-author {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+
+    color: #fff;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21px;
+
+    color: #fff;
+}
+
+.container-images {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr) 3fr;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.image {
+    /*padding: 0 22px;*/
+}
+
+.image:hover {
+    cursor: pointer;
+}

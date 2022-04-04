@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.container-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.image-container {
+    background: var(--color-blue);
+    opacity: 1;
+}
+
+.image-container:hover .image {
+    opacity: 0.4;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image:hover {
+    cursor: pointer;
+}

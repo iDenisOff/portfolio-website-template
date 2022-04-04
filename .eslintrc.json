@@ -1,0 +1,110 @@
+{
+    "env": {
+        "browser": true,
+        "node": true,
+        "es6": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:prettier/recommended"
+    ],
+    "overrides": [
+        {
+            "files": ["**/*.tsx"],
+            "rules": {
+                "react/prop-types": "off",
+                "@typescript-eslint/no-unnecessary-type-constraint": "off"
+            }
+        },
+        {
+            "files": ["**/getters.ts", "**/*.actions.ts"],
+            "rules": {
+                "@typescript-eslint/explicit-module-boundary-types": "off",
+                "@typescript-eslint/explicit-function-return-type": "off"
+            }
+        }
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "tsconfig.json",
+        "tsconfigRootDir": "."
+    },
+    "plugins": ["react", "react-hooks", "promise", "@typescript-eslint"],
+    "settings": {
+        "react": {
+            "createClass": "createReactClass",
+            "pragma": "React",
+            "version": "detect"
+        }
+    },
+    "rules": {
+        "no-duplicate-imports": [
+            "error",
+            {
+                "includeExports": true
+            }
+        ],
+        "no-template-curly-in-string": "error",
+        "no-alert": "warn",
+        "no-console": "warn",
+        "no-else-return": [
+            "error",
+            {
+                "allowElseIf": false
+            }
+        ],
+        "block-scoped-var": "error",
+        "curly": ["error", "all"],
+        "eqeqeq": "error",
+        "max-classes-per-file": ["error", 1],
+        "react/display-name": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unsafe-return": "off",
+        "@typescript-eslint/no-unsafe-member-access": "off",
+        "@typescript-eslint/no-misused-promises": [
+            "error",
+            {
+                "checksVoidReturn": false
+            }
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+            "warn",
+            {
+                "allowExpressions": true,
+                "allowHigherOrderFunctions": true
+            }
+        ],
+        "@typescript-eslint/ban-ts-ignore": "off",
+        "@typescript-eslint/await-thenable": "off",
+        "@typescript-eslint/no-unused-vars": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "promise/prefer-await-to-then": "error",
+        "react/no-access-state-in-setstate": "error",
+        "react/no-danger": "off",
+        "react/no-multi-comp": "off",
+        "react/no-this-in-sfc": "error",
+        "react/prefer-stateless-function": "error",
+        "react/jsx-filename-extension": [
+            "error",
+            {
+                "extensions": [".tsx"]
+            }
+        ],
+        "react/jsx-no-bind": [
+            "error",
+            {
+                "allowArrowFunctions": true
+            }
+        ],
+        "react/jsx-no-literals": "warn",
+        "react/jsx-no-useless-fragment": "off",
+        "react/jsx-pascal-case": "error",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "off"
+    }
+}
