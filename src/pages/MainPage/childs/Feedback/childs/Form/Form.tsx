@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./Form.style.css";
 
 export const Form: React.FC = () => {
-    const onClick = () => {
-        console.log("onClick");
+    const onClick = (): void => {
+        location.reload();
     };
 
     return (

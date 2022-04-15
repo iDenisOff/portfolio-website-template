@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: 1fr 1.5fr 1fr;
+    /*grid-template-rows: 1fr 1.5fr 1fr;*/
     margin: 0 50px;
 
     user-select: none;
@@ -10,6 +10,8 @@
     font-weight: 500;
     font-size: 48px;
     line-height: 79px;
+
+    padding-bottom: 40px;
 }
 
 .text {
@@ -19,6 +21,8 @@
     color: var(--color-grey);
 
     margin: auto;
+
+    padding-bottom: 40px;
 }
 
 .container-button {

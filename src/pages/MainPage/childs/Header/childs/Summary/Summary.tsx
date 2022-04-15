@@ -3,7 +3,7 @@ import styles from "./Summary.style.css";
 
 export const Summary: React.FC = () => {
     const onClick = (): void => {
-        console.log("onClick");
+        location.reload();
     };
 
     return (
