@@ -51,7 +51,7 @@
     "react-transition-group": "4.4.2"
   },
   "scripts": {
-    "build temp": "cross-env APP_MODE=development webpack serve --mode development",
+    "build dev": "cross-env APP_MODE=development webpack serve --mode development",
     "build": "cross-env APP_MODE=production webpack --mode production",
     "check-code-style": "prettier --check ./src && eslint ./src",
     "predeploy": "npm run build",
