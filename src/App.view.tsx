@@ -1,14 +1,14 @@
 import React from "react";
 import "./App.gstyle.css";
-import { BrowserRouter, Route, RouteProps } from "react-router-dom";
+import { HashRouter, Route, RouteProps } from "react-router-dom";
 import { routes } from "./Routes";
 
 export const App = (): JSX.Element => (
     <div className="app">
-        <BrowserRouter>
+        <HashRouter>
             {routes.map((route: RouteProps) => (
                 <Route key={route.path as string} {...route} />
             ))}
-        </BrowserRouter>
+        </HashRouter>
     </div>
 );
